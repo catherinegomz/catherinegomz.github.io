@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+<link href="../CSS/estilo_formularios.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="Estilos de texto.html">Texto&nbsp;</a></li>
+    <li><a href="Listas.html">Listas&nbsp;</a></li>
+    <li><a href="Tablas.html">Tablas</a></li>
+	 <li><a href="Enlaces.html">Enlaces</a></li>
+	<li><a href="Formularios.html">Formulario</a></li>
+	<li><a href="Enlace_imagenes.html">Imagen</a></li>
+    <li><a href="Audio.html">Audio</a></li>
+    <li><a href="Video.html">Vídeo</a></li>
+	<li><a href="Tipografia.html">Tipografía</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Formulario de ingreso autentificado</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia incidunt nisi, sed et fugiat, dolore! Molestiae facilis eligendi, possimus delectus alias, esse libero quisquam harum repudiandae assumenda error id, tempore molestias beatae labore doloribus odio velit veritatis optio necessitatibus ullam corporis quos amet suscipit. Doloribus odit quae alias corporis.</p>
+	  <form action="Procesamiento.html">
+	  	<label>Usuario</label>
+		  <input type="text" id="usuario" name="usuario">
+		  <label>Contrasena</label>
+		  <input type="password" id="contrasena" name="contrasena">
+		  <input type="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Formulario entrevista</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia incidunt nisi, sed et fugiat, dolore! Molestiae facilis eligendi, possimus delectus alias, esse libero quisquam harum repudiandae assumenda error id, tempore molestias beatae labore doloribus odio velit veritatis optio necessitatibus ullam corporis quos amet suscipit. Doloribus odit quae alias corporis.</p>
+	  <h3>Encuesta</h3>
+    <form id="form1" name="form1" method="post" action="Procesamiento.html">
+      <label for="number">Edad:</label>
+      <input name="number" type="number" id="number" min="18">
+		<br><br>
+		<label for="select">País:</label>
+      <select name="select" id="select">
+          <option>México</option>
+          <option>España</option>
+          <option>Estados Unidos</option>
+          <option>Perú</option>
+          <option>Italia</option>
+        </select>
+		<br>
+        <p><label>Género</label>
+		  <br>
+		  <label>
+          <input type="radio" name="G&eacute;nero" value="Femenino" id="Geacutenero_0">
+        Femenino</label>
+        <br>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Masculino" id="Geacutenero_1">
+          Masculino</label>
+			</p>
+        <br>
+		<label>¿Qué tipo de música prefieres?</label>
+        <table width="200">
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="casilla de verificación " id="Muacutesica_0">
+              Rock</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="casilla de verificación " id="Muacutesica_1">
+              Pop</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="Alternativo" id="Muacutesica_2">
+              Alternativo</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="Jazz" id="Muacutesica_3">
+              Jazz</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="Reggaetón" id="Muacutesica_4">
+              Reggaetón</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="checkbox" name="Música" value="Banda" id="Muacutesica_5">
+              Banda</label></td>
+          </tr>
+        </table>
+        <input type="submit" value="Enviar">
+    </form>
+  </section>
+  <section>
+    <h2>Formulario de comentarios</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia incidunt nisi, sed et fugiat, dolore! Molestiae facilis eligendi, possimus delectus alias, esse libero quisquam harum repudiandae assumenda error id, tempore molestias beatae labore doloribus odio velit veritatis optio necessitatibus ullam corporis quos amet suscipit. Doloribus odit quae alias corporis.</p>
+	  <form action="Procesamiento.html">
+    <label for="email">Correo:</label>
+    <input type="email" name="email" id="email">
+	  <br><br>
+    <label for="textarea">Comentario:</label>
+    <textarea name="textarea" cols="20" rows="5" maxlength="50" id="textarea">Escribe tu comentario</textarea>
+	  <br><br>
+    <input type="submit" name="submit" id="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Formulario Extra&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia incidunt nisi, sed et fugiat, dolore! Molestiae facilis eligendi, possimus delectus alias, esse libero quisquam harum repudiandae assumenda error id, tempore molestias beatae labore doloribus odio velit veritatis optio necessitatibus ullam corporis quos amet suscipit. Doloribus odit quae alias corporis.</p>
+    <form id="form2" name="form2" method="post" action="Procesamiento.html">
+      <label for="datetime">Fecha:</label>
+      <input type="datetime" name="datetime" id="datetime">
+      <label for="tel">Tel:</label>
+      <input type="tel" name="tel" id="tel">
+      <label for="color">Color:</label>
+      <input type="color" name="color" id="color">
+	<br>
+	 <input type="submit" value="Enviar">
+      
+    </form>
+  </section>
+</main>
+<footer>
+  <h6>Elaborado por Catherine Gómez</h6>
+</footer>
+202535
+</body>
+</html>
